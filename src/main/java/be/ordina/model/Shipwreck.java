@@ -13,7 +13,7 @@ public class Shipwreck {
     Long id;
     String name;
     String description;
-    String condition;
+    String acondition;
     Integer depth;
     Double latitude;
     Double longitude;
@@ -22,11 +22,12 @@ public class Shipwreck {
     public Shipwreck() {
     }
 
-    public Shipwreck(Long id, String name, String description, String condition, Integer depth, Double latitude, Double longitude, Integer yearDiscovered) {
+    public Shipwreck(Long id, String name, String description, String acondition, Integer depth, Double latitude,
+                     Double longitude, Integer yearDiscovered) {
         this.id = id;
         this.name = name;
         this.description = description;
-        this.condition = condition;
+        this.acondition = acondition;
         this.depth = depth;
         this.latitude = latitude;
         this.longitude = longitude;
@@ -55,14 +56,6 @@ public class Shipwreck {
 
     public void setDescription(String description) {
         this.description = description;
-    }
-
-    public String getCondition() {
-        return condition;
-    }
-
-    public void setCondition(String condition) {
-        this.condition = condition;
     }
 
     public Integer getDepth() {
@@ -95,5 +88,13 @@ public class Shipwreck {
 
     public void setYearDiscovered(Integer yearDiscovered) {
         this.yearDiscovered = yearDiscovered;
+    }
+
+    public String getAcondition() {
+        return acondition;
+    }
+
+    public void setAcondition(String acondition) {
+        this.acondition = acondition;
     }
 }
